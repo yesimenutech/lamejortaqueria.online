@@ -1,121 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mejor Taquería – Auténtica Comida Mexicana en San Jose</title>
-    <meta name="description" content="La Mejor Taquería en San Jose, CA. Tacos de tripa, enchiladas michoacanas y más. Pide online para delivery o recogida. ¡Sabor auténtico mexicano!">
-    <meta name="keywords" content="taquería, tacos, comida mexicana, San Jose, delivery, enchiladas, tacos de tripa">
-    <link rel="canonical" href="https://lamejortaqueria.online/">
-    <meta property="og:title" content="La Mejor Taquería – Auténtica Comida Mexicana">
-    <meta property="og:description" content="Tacos de tripa, enchiladas michoacanas y más. Pide online para delivery o recogida.">
-    <meta property="og:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1791392093/LaMejorTaqueriaLOGO_feghsa.png">
-    <meta property="og:url" content="https://lamejortaqueria.online/">
+    <meta name="description" content="La Rienda Mexican Food - Authentic Mexican cuisine with a unique Western twist. Experience the best flavor in town.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://menutech.xyz">
+    <meta property="og:title" content="La Rienda Mexican Food">
+    <meta property="og:description" content="Authentic Mexican cuisine with an irresistible flavor in every bite.">
     <meta property="og:type" content="restaurant">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="La Mejor Taquería – Auténtica Comida Mexicana">
-    <meta name="twitter:description" content="Tacos de tripa, enchiladas michoacanas y más. Pide online para delivery o recogida.">
-    <meta name="twitter:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1791392093/LaMejorTaqueriaLOGO_feghsa.png">
-    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1791392093/LaMejorTaqueriaLOGO_feghsa.png">
+    
+    <title>La Rienda Mexican Food | Authentic Western & Mexican</title>
+    
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1787412949/logo_vectorizado_nxuxqq.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rokkitt:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        /* ===== RESET & BASE ===== */
+        :root {
+            --color-primary: #8b0000;      /* Rojo vino / quemado (Botones, enlaces, iconos, detalles, CTAs) */
+            --color-secondary: #cc5500;    /* Terracota / naranja quemado (Encabezados, menú, pie de página) */
+            --color-background: #fffaf0;   /* Crema cálido (Fondo principal) */
+            --color-support: #d4af37;      /* Dorado cálido (Apoyo) */
+            --color-text-dark: #333333;    /* Gris oscuro (Texto) */
+            --color-text-light: #5c5c5c;
+            --color-white: #ffffff;
+            --font-serif: 'Rokkitt', serif;
+            --font-sans: 'Montserrat', sans-serif;
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
         *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --color-rojo: #e63946;
-            --color-rojo-oscuro: #b71c2c;
-            --color-rojo-claro: #ff6b6b;
-            --color-verde: #2a9d8f;
-            --color-verde-oscuro: #1d6f64;
-            --color-amarillo: #f4a261;
-            --color-crema: #fdf6ec;
-            --color-crema-oscuro: #f5e6d3;
-            --color-carbon: #1a1a1a;
-            --color-gris: #4a4a4a;
-            --color-gris-claro: #8a8a8a;
-            --color-blanco: #ffffff;
-            --font-display: 'Alfa Slab One', serif;
-            --font-body: 'Montserrat', sans-serif;
-            --shadow-sm: 0 2px 8px rgba(230, 57, 70, 0.12);
-            --shadow-md: 0 6px 24px rgba(230, 57, 70, 0.18);
-            --shadow-lg: 0 12px 48px rgba(230, 57, 70, 0.25);
-            --radius: 4px;
-            --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
-            font-family: var(--font-body);
+            font-family: var(--font-sans);
             font-size: 16px;
             line-height: 1.7;
-            color: var(--color-carbon);
-            background-color: var(--color-crema);
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            background-image: radial-gradient(var(--color-support) 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+            background-position: 0 0;
             overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
-            max-width: 1180px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 20px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: var(--transition-smooth); }
+
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-serif);
+            color: var(--color-secondary);
+            font-weight: 700;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* ===== DECORATIVE PATTERN ===== */
-        .pattern-bg {
-            position: relative;
-        }
-        .pattern-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L35 20 L50 20 L38 30 L43 45 L30 36 L17 45 L22 30 L10 20 L25 20 Z' fill='%23e63946' fill-opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        /* ===== NAVBAR ===== */
+        /* Navbar */
         .navbar {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--color-blanco);
+            top: 0; left: 0; right: 0;
+            background-color: var(--color-secondary);
             z-index: 1000;
-            padding: 14px 0;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
-            transition: var(--transition);
-            border-bottom: 3px solid var(--color-rojo);
+            padding: 15px 0;
+            border-bottom: 3px solid var(--color-support);
+            transition: var(--transition-smooth);
         }
 
         .navbar.scrolled {
-            padding: 8px 0;
-            box-shadow: 0 4px 30px rgba(230, 57, 70, 0.15);
+            padding: 10px 0;
+            box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
         }
 
         .nav-container {
@@ -125,417 +91,192 @@
         }
 
         .navbar-brand {
-            font-family: var(--font-display);
-            font-size: 22px;
-            color: var(--color-rojo);
-            letter-spacing: 0.5px;
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--color-white);
+            letter-spacing: 1px;
             text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .navbar-brand .brand-accent {
-            color: var(--color-carbon);
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 28px;
+            gap: 35px;
             align-items: center;
         }
 
         .nav-link {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
-            color: var(--color-carbon);
+            color: var(--color-white);
             letter-spacing: 1.5px;
-            transition: var(--transition);
             position: relative;
-            padding: 4px 0;
         }
 
         .nav-link::after {
             content: '';
             position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background-color: var(--color-rojo);
-            transition: var(--transition);
-            border-radius: 2px;
+            width: 0; height: 2px;
+            bottom: -5px; left: 0;
+            background-color: var(--color-primary);
+            transition: var(--transition-smooth);
         }
 
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
+        .nav-link:hover { color: var(--color-support); }
+        .nav-link:hover::after { width: 100%; background-color: var(--color-support); }
 
-        .nav-link:hover {
-            color: var(--color-rojo);
-        }
-
-        .lang-switch {
+        .lang-switcher {
             display: flex;
             align-items: center;
-            gap: 6px;
-            margin-left: 16px;
-            border-left: 2px solid var(--color-crema-oscuro);
-            padding-left: 16px;
+            gap: 8px;
+            border: 2px solid var(--color-support);
+            padding: 5px 12px;
+            border-radius: 20px;
+            background: var(--color-white);
         }
 
         .lang-btn {
             cursor: pointer;
-            font-weight: 700;
-            font-size: 12px;
-            letter-spacing: 1px;
-            padding: 4px 8px;
-            border-radius: 3px;
-            transition: var(--transition);
-            border: 2px solid transparent;
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--color-text-light);
+            transition: var(--transition-smooth);
         }
 
-        .lang-btn.active {
-            color: var(--color-blanco);
-            background-color: var(--color-rojo);
-            border-color: var(--color-rojo);
-        }
-
-        .lang-btn:not(.active) {
-            color: var(--color-gris-claro);
-            border-color: var(--color-crema-oscuro);
-        }
-
-        .lang-btn:not(.active):hover {
-            border-color: var(--color-rojo);
-            color: var(--color-rojo);
-        }
+        .lang-btn.active { color: var(--color-primary); font-weight: 800; }
+        .lang-divider { color: var(--color-support); }
 
         .navbar-toggler {
             display: none;
             flex-direction: column;
-            gap: 5px;
+            gap: 6px;
             background: none;
             border: none;
             cursor: pointer;
-            padding: 6px;
+            padding: 5px;
         }
 
         .toggler-icon {
-            width: 26px;
-            height: 3px;
-            background-color: var(--color-carbon);
-            transition: var(--transition);
+            width: 30px; height: 3px;
+            background-color: var(--color-white);
+            transition: var(--transition-smooth);
             border-radius: 2px;
         }
 
-        /* ===== HERO ===== */
+        /* Hero Section */
         .hero {
             position: relative;
-            min-height: 100vh;
+            height: 90vh;
+            min-height: 700px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1600/v1791392163/IMG-20260924-WA0110_p1v1vb.jpg');
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1600/v1777151404/yiebnrm6l10wizbcdbp2.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            overflow: hidden;
+            margin-top: 60px;
         }
 
         .hero-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(26, 26, 26, 0.85) 0%,
-                rgba(183, 28, 44, 0.7) 50%,
-                rgba(26, 26, 26, 0.8) 100%
-            );
-            z-index: 1;
-        }
-
-        /* Taco animation layer */
-        .taco-animation-layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            pointer-events: none;
-            overflow: hidden;
-        }
-
-        .floating-taco {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            opacity: 0;
-            animation: floatTaco 12s linear infinite;
-            filter: drop-shadow(0 4px 12px rgba(230, 57, 70, 0.4));
-        }
-
-        .floating-taco img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        @keyframes floatTaco {
-            0% {
-                opacity: 0;
-                transform: translateY(100vh) rotate(0deg) scale(0.5);
-            }
-            10% {
-                opacity: 0.8;
-            }
-            90% {
-                opacity: 0.8;
-            }
-            100% {
-                opacity: 0;
-                transform: translateY(-100px) rotate(360deg) scale(1.1);
-            }
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.85) 0%, rgba(204, 85, 0, 0.65) 100%);
         }
 
         .hero-content {
             position: relative;
-            z-index: 3;
+            z-index: 1;
             text-align: center;
-            color: var(--color-blanco);
-            padding: 0 24px;
-            max-width: 950px;
+            color: var(--color-white);
+            padding: 40px;
+            max-width: 900px;
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(4px);
         }
 
-        .hero-subtitle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            font-family: var(--font-body);
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin-bottom: 24px;
-            color: var(--color-amarillo);
-        }
-
-        .line-decoration {
-            width: 50px;
-            height: 3px;
-            background-color: var(--color-amarillo);
-            border-radius: 2px;
-        }
-
-        .hero-logo-container {
-            margin-bottom: 28px;
-        }
-
+        .hero-logo-container { margin-bottom: 25px; }
         .hero-logo {
-            max-height: 130px;
+            max-height: 150px;
             width: auto;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.3));
-            animation: logoPulse 3s ease-in-out infinite;
-        }
-
-        @keyframes logoPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.04); }
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
         }
 
         .hero-title {
-            font-family: var(--font-display);
-            font-size: clamp(36px, 7vw, 82px);
-            line-height: 1.1;
-            margin-bottom: 20px;
+            font-size: 65px;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 3px 3px 0 var(--color-rojo-oscuro), 6px 6px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .hero-title .title-accent {
-            color: var(--color-amarillo);
-            display: block;
-            font-size: 0.75em;
-            letter-spacing: 6px;
-        }
-
-        .hero-tagline {
-            font-size: 18px;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 36px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.6;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: var(--color-white);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero-buttons {
             display: flex;
-            gap: 18px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 24px;
+            margin-top: 35px;
         }
 
         .hero-address {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 500;
-            color: rgba(255, 255, 255, 0.85);
-            margin-top: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .hero-address svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--color-amarillo);
-            flex-shrink: 0;
-        }
-
-        /* ===== BUTTONS ===== */
-        .btn {
-            display: inline-block;
-            padding: 16px 38px;
-            font-family: var(--font-body);
-            font-size: 14px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            cursor: pointer;
-            border: 3px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .btn:hover::before {
-            left: 100%;
-        }
-
-        .btn-primary {
-            background: var(--color-rojo);
-            border-color: var(--color-rojo);
-            color: var(--color-blanco);
-            box-shadow: 0 4px 20px rgba(230, 57, 70, 0.4);
-        }
-
-        .btn-primary:hover {
-            background: var(--color-rojo-oscuro);
-            border-color: var(--color-rojo-oscuro);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(230, 57, 70, 0.5);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border-color: var(--color-blanco);
-            color: var(--color-blanco);
-        }
-
-        .btn-outline:hover {
-            background: var(--color-blanco);
-            color: var(--color-rojo);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
-        }
-
-        /* ===== SECTION TITLES ===== */
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(28px, 4vw, 46px);
-            color: var(--color-carbon);
-            margin-bottom: 8px;
-            text-transform: uppercase;
+            margin-top: 25px;
             letter-spacing: 1px;
-            line-height: 1.15;
+            color: var(--color-support);
         }
 
-        .section-title .title-accent {
-            color: var(--color-rojo);
-        }
-
-        .section-title.centered {
-            text-align: center;
-        }
-
-        .section-subtitle-container {
+        /* Western Decorations */
+        .vaquera-separator {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 28px;
-        }
-
-        .section-subtitle-container.centered {
             justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .vaquera-separator::before, .vaquera-separator::after {
+            content: '';
+            width: 60px;
+            height: 2px;
+            background-color: var(--color-primary);
         }
 
-        .line-small {
-            width: 36px;
-            height: 3px;
-            background-color: var(--color-rojo);
-            border-radius: 2px;
+        .vaquera-diamond {
+            width: 14px; height: 14px;
+            background-color: var(--color-support);
+            transform: rotate(45deg);
+        }
+
+        /* Section Global */
+        .section-padding { padding: 100px 0; }
+        
+        .section-title {
+            font-size: 42px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .section-subtitle {
-            font-size: 12px;
-            font-weight: 800;
+            text-align: center;
+            font-family: var(--font-sans);
+            color: var(--color-primary);
+            font-weight: 700;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--color-rojo);
+            font-size: 14px;
+            margin-bottom: 10px;
         }
 
-        /* ===== ABOUT SECTION ===== */
-        .about-section {
-            padding: 100px 0;
-            background-color: var(--color-blanco);
-            position: relative;
-        }
-
-        .about-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: repeating-linear-gradient(
-                90deg,
-                var(--color-rojo) 0px,
-                var(--color-rojo) 20px,
-                var(--color-amarillo) 20px,
-                var(--color-amarillo) 40px,
-                var(--color-verde) 40px,
-                var(--color-verde) 60px
-            );
-        }
-
+        /* About Section */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -543,607 +284,345 @@
             align-items: center;
         }
 
+        .about-text { text-align: left; }
+        .about-text .section-title { text-align: left; }
+        .about-text .section-subtitle { text-align: left; }
+        .about-text .vaquera-separator { justify-content: flex-start; }
+        
         .about-text p {
-            color: var(--color-gris);
-            margin-bottom: 18px;
-            line-height: 1.9;
-            font-size: 16px;
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: var(--color-text-dark);
+            line-height: 1.8;
+        }
+        
+        .about-text p strong {
+            color: var(--color-primary);
         }
 
-        .about-text p:first-of-type {
-            font-size: 18px;
-            font-weight: 500;
-            color: var(--color-carbon);
+        .vaquera-frame {
+            position: relative;
+            padding: 15px;
+            background: var(--color-white);
+            border: 2px solid var(--color-support);
+            box-shadow: 8px 8px 0px var(--color-primary);
         }
 
-        .about-images {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .about-image {
+        .vaquera-frame img {
             width: 100%;
-            height: 320px;
+            height: 400px;
             object-fit: cover;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-secondary);
         }
 
-        .about-image:hover {
-            transform: scale(1.03);
-            box-shadow: var(--shadow-md);
+        /* Promotion Section */
+        .promo-section {
+            background-color: var(--color-white);
+            border-top: 3px dashed var(--color-support);
+            border-bottom: 3px dashed var(--color-support);
         }
 
-        .about-image:first-child {
-            margin-top: 30px;
+        .promo-wrapper {
+            max-width: 850px;
+            margin: 40px auto 0;
+            padding: 20px;
+            background: var(--color-background);
+            border: 2px solid var(--color-support);
+            box-shadow: 10px 10px 0px var(--color-primary);
+            border-radius: 4px;
         }
 
-        /* ===== GALLERY SECTION ===== */
+        .promo-img-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .promo-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 80vh;
+            object-fit: contain;
+            border: 2px solid var(--color-secondary);
+            border-radius: 2px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Gallery Section */
         .gallery-section {
-            padding: 100px 0;
-            background-color: var(--color-crema);
-            position: relative;
-        }
-
-        .gallery-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10 L45 30 L65 30 L50 42 L55 62 L40 50 L25 62 L30 42 L15 30 L35 30 Z' fill='%23e63946' fill-opacity='0.03'/%3E%3C/svg%3E");
-            pointer-events: none;
-        }
-
-        .gallery-section .container {
-            position: relative;
-            z-index: 1;
+            background-color: var(--color-white);
+            border-top: 3px dashed var(--color-support);
+            border-bottom: 3px dashed var(--color-support);
         }
 
         #gallery-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
             margin-top: 50px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border: 4px solid var(--color-background);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .gallery-img {
             width: 100%;
-            aspect-ratio: 1 / 1;
+            height: 300px;
             object-fit: cover;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            cursor: pointer;
-            box-shadow: var(--shadow-sm);
+            transition: transform 0.6s ease;
         }
 
-        .gallery-img:hover {
-            transform: scale(1.05) rotate(1deg);
-            box-shadow: var(--shadow-lg);
-            z-index: 2;
-            position: relative;
-        }
+        .gallery-item:hover .gallery-img { transform: scale(1.08); }
 
-        /* ===== INFO SECTION ===== */
-        .info-section {
-            padding: 100px 0;
-            background-color: var(--color-blanco);
-        }
-
+        /* Info Section */
         .info-box {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: var(--color-crema);
-            padding: 60px 50px;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-md);
-            border: 3px solid var(--color-rojo);
+            background: var(--color-white);
+            padding: 60px;
+            border: 2px solid var(--color-support);
+            box-shadow: 10px 10px 0px var(--color-secondary);
             position: relative;
-            overflow: hidden;
         }
 
-        .info-box::before {
+        .info-box::after {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 8px;
-            background: linear-gradient(90deg, var(--color-rojo), var(--color-amarillo), var(--color-verde), var(--color-rojo));
-            background-size: 200% 100%;
-            animation: gradientShift 4s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px dashed var(--color-primary);
+            pointer-events: none;
         }
 
         .info-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 40px;
-            margin-top: 40px;
-        }
-
-        .info-item {
+            margin-top: 50px;
             text-align: center;
-            padding: 24px 16px;
-            border-radius: var(--radius);
-            transition: var(--transition);
-        }
-
-        .info-item:hover {
-            background: var(--color-blanco);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .info-icon {
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 16px;
-            background: var(--color-rojo);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .info-icon svg {
-            width: 24px;
-            height: 24px;
-            fill: var(--color-blanco);
         }
 
         .info-item h4 {
-            font-family: var(--font-display);
-            font-size: 18px;
-            color: var(--color-carbon);
-            margin-bottom: 12px;
+            font-size: 24px;
+            color: var(--color-primary);
+            margin-bottom: 15px;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .info-item p {
-            color: var(--color-gris);
-            font-size: 15px;
-            line-height: 1.7;
+            color: var(--color-text-dark);
+            font-weight: 500;
         }
 
-        .info-item a {
-            color: var(--color-rojo);
-            font-weight: 700;
-            transition: var(--transition);
-        }
-
-        .info-item a:hover {
-            color: var(--color-rojo-oscuro);
-            text-decoration: underline;
-        }
-
-        /* ===== FOOTER ===== */
+        /* Footer */
         .site-footer {
-            background-color: var(--color-carbon);
-            padding: 80px 0 0;
-            color: #b0b0b0;
+            background-color: var(--color-secondary);
+            color: var(--color-background);
+            padding: 80px 0 30px;
             position: relative;
         }
 
         .site-footer::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 6px;
-            background: repeating-linear-gradient(
-                90deg,
-                var(--color-rojo) 0px,
-                var(--color-rojo) 20px,
-                var(--color-amarillo) 20px,
-                var(--color-amarillo) 40px,
-                var(--color-verde) 40px,
-                var(--color-verde) 60px
-            );
+            background: var(--color-primary);
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 50px;
-            max-width: 1000px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            max-width: 900px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .footer-title {
-            font-family: var(--font-display);
-            font-size: 18px;
-            color: var(--color-blanco);
+            color: var(--color-support);
+            font-size: 28px;
             margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-            padding-bottom: 12px;
-        }
-
-        .footer-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background-color: var(--color-rojo);
-            border-radius: 2px;
+            letter-spacing: 2px;
         }
 
         .footer-col p {
-            font-size: 14px;
-            line-height: 1.9;
-            margin-bottom: 6px;
+            font-size: 16px;
+            margin-bottom: 10px;
         }
 
-        .footer-col a {
-            color: var(--color-amarillo);
-            transition: var(--transition);
-        }
-
-        .footer-col a:hover {
-            color: var(--color-rojo-claro);
-            text-decoration: underline;
-        }
-
-        .social-icons {
-            margin-top: 20px;
+        .social-icons-wrapper {
             display: flex;
-            gap: 14px;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
         }
 
-        .social-icons a {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.08);
-            display: flex;
+        .social-link {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            transition: var(--transition);
-            color: #b0b0b0;
+            width: 45px; height: 45px;
+            background-color: var(--color-background);
+            color: var(--color-primary);
+            border-radius: 50%;
+            transition: var(--transition-smooth);
         }
 
-        .social-icons a:hover {
-            background: var(--color-rojo);
-            color: var(--color-blanco);
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
-        }
-
-        .social-icons svg {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
+        .social-link:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            transform: translateY(-5px);
         }
 
         .footer-bottom {
-            text-align: center;
             margin-top: 60px;
-            padding: 24px 0;
-            font-size: 13px;
-            color: #7a7a7a;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 25px;
+            border-top: 1px dashed rgba(255,255,255,0.3);
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-background);
         }
 
         .footer-bottom a {
-            color: var(--color-amarillo);
+            color: var(--color-support);
             font-weight: 800;
-            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+        .footer-bottom a:hover { color: var(--color-white); }
 
-        .footer-bottom a:hover {
-            color: var(--color-rojo-claro);
-        }
-
-        /* ===== SCROLLBAR ===== */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--color-crema);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--color-rojo);
-            border-radius: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--color-rojo-oscuro);
-        }
-
-        /* ===== ANIMATIONS ===== */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        /* ===== RESPONSIVE ===== */
+        /* Responsive */
         @media (max-width: 992px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .about-images {
-                order: -1;
-            }
-
-            .about-image:first-child {
-                margin-top: 0;
-            }
-
-            #gallery-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+            .about-grid, .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .about-text .section-title, .about-text .section-subtitle { text-align: center; }
+            .about-text .vaquera-separator { justify-content: center; }
+            .info-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 50px; }
         }
 
         @media (max-width: 768px) {
-            .navbar-toggler {
-                display: flex;
-            }
-
+            .navbar-toggler { display: flex; }
             .nav-menu {
                 position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
+                top: 100%; left: 0; right: 0;
+                background-color: var(--color-secondary);
                 flex-direction: column;
-                background-color: var(--color-blanco);
-                padding: 24px;
-                gap: 18px;
-                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-                transform: translateY(-120%);
-                opacity: 0;
-                visibility: hidden;
-                transition: var(--transition);
-                border-bottom: 3px solid var(--color-rojo);
+                padding: 30px 20px;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease-in-out;
             }
-
             .nav-menu.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
-
-            .lang-switch {
-                margin-left: 0;
-                border-left: none;
-                padding-left: 0;
-                margin-top: 8px;
-            }
-
-            .hero {
-                background-attachment: scroll;
-            }
-
-            .hero-title {
-                font-size: clamp(30px, 9vw, 52px);
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 300px;
-                text-align: center;
-            }
-
-            #gallery-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-
-            .info-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
-            .info-box {
-                padding: 40px 24px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-title::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            .social-icons {
-                justify-content: center;
-            }
-
-            .floating-taco {
-                width: 40px;
-                height: 40px;
-            }
+            .hero-title { font-size: 40px; }
+            .info-box { padding: 40px 20px; }
+            .promo-wrapper { padding: 10px; }
         }
 
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 28px;
-                letter-spacing: 0;
-            }
-
-            .hero-subtitle {
-                font-size: 11px;
-                letter-spacing: 2px;
-            }
-
-            .line-decoration {
-                width: 30px;
-            }
-
-            .section-title {
-                font-size: 24px;
-            }
-
-            .about-images {
-                grid-template-columns: 1fr;
-            }
-
-            .about-image {
-                height: 240px;
-            }
-
-            .about-image:first-child {
-                margin-top: 0;
-            }
-
-            #gallery-container {
-                grid-template-columns: 1fr;
-            }
-
-            .info-box {
-                padding: 30px 18px;
-            }
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-
-        /* Reduce motion for accessibility */
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-
-            .floating-taco {
-                display: none;
-            }
-
-            .hero {
-                background-attachment: scroll;
-            }
-        }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
     </style>
-    <script>
+
+<script>
         window.MENU_TECH_STATE = {
-            "lang": "es",
-            "showReservations": false,
-            "showAbout": true,
-            "showPromo": false,
-            "showGallery": true,
-            "showCatering": false,
-            "showInfo": true,
-            "showDelivery": false,
-            "cuid": "00000",
-            "ruid": "00000",
-            "title": "La Mejor Taqueria",
-            "logoImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392093/LaMejorTaqueriaLOGO_feghsa.png",
-            "heroAddress": "2003 Story Rd, San Jose, CA 95122",
-            "heroImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392163/IMG-20260924-WA0110_p1v1vb.jpg",
-            "aboutImg1": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392210/IMG-20260924-WA0111_dk3jxf.jpg",
-            "aboutImg2": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392233/PIZZA_BIRRIA_a2jlp0.jpg",
-            "gallery": [
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392252/SOPES_z1xdc4.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392252/ORDEN_DE_QUESABIRRIAS_gg4e39.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392253/MORISQUETA_CON_COSTILLAS_DE_PUERCO_d0phdb.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392253/MOJARRA_GRITS_ooq6e9.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392254/MOLE_ROJO_pb87ik.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392254/FLAUTAS_CON_ARROZ_Y_FRIJOL_jwsesa.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392255/ENCHILADAS_MICHOACANAS_DE_SECINA_nepezw.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392256/ENCHILADAS_MICHOACANAS_CON_POLLLO_ymoxka.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392257/ENCHILADAS_MICHOACANAS_CON_PATA_DE_PUERCO_zfcky9.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392257/ENCHILADAS_MICHOACANAS_CON_HIULOTAS_qodbom.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392258/COSTILLA_DE_PUERCO_VERDE_O_ROJA_kpjhly.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392259/CHILE_RELLENO_r3rd3w.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392259/CARNE_ASADA_l6wi9r.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392260/CALDO_DE_RES_v8hxvc.jpg",
-                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1791392260/3_TACOS_ARROZ_Y_FRIJOLES_tzb6gz.jpg"
+            "lang":"en",
+            "showReservations":true,
+            "showAbout":true,
+            "showPromo":true,
+            "showGallery":true,
+            "showCatering":false,
+            "showInfo":true,
+            "showDelivery":false,
+            "cuid":"6c50d241-e03d-4997-b7bc-ef73154f281c",
+            "ruid":"9d6b2548-bb54-4511-aee6-684c5201f4fd",
+            "title":"La Rienda Mexican Food",
+            "logoImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412949/logo_vectorizado_nxuxqq.png",
+            "heroAddress":"5 W Mill Rd, Long Valley, NJ, 07853, United States",
+            "heroImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412284/image_-_2026-03-12T104038.182_oh8zae.png",
+            "aboutImg1":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412960/32921548_1460702444075026_617117591332192256_n_rwrijm.jpg",
+            "aboutImg2":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412966/33428430_1465166726961931_2166073941494333440_n_tidwwx.jpg",
+            "gallery":[
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412980/50412299_1692385520906716_1923795622305988608_n_jvawan.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412980/50342186_1689773311167937_737183981912457216_n_bsg5h7.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412980/48240838_1655913094553959_822314369772683264_n_koivlx.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412981/46779808_1642686842543251_7118465168459169792_n_aio4ff.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412981/45121055_1621872754624660_1639695432734998528_n_mi1cgz.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412982/44295963_1612107968934472_7496153103431892992_n_yzjqy6.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412982/43851716_1607152716096664_6242730979006349312_n_utvme0.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412983/43153076_1601442173334385_3624155217534124032_n_nw608f.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412983/40429990_1576390865839516_2828927690373857280_n_pey0qv.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412983/37421210_1525477634264173_397983476512456704_n_g9hqbr.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412984/36371636_1497398483738755_4931896244323745792_n_diou99.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412984/34771391_1475209725957631_1713166406020759552_n_okgrek.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412985/34067488_1469348486543755_7020515956782792704_n_tqbdnj.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412985/33428430_1465166726961931_2166073941494333440_n_r2isi7.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787412985/32921548_1460702444075026_617117591332192256_n_vhchye.jpg",
+
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788446685/IMG-20260724-WA0040_wyyfsq.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424889/f72ca3bfa672da43dee6441d02cafb22a329bd15b821d4e7d6cf5ab770f8bfc2_e2qcqu.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424889/df72aa45d7f9b7715bd823f72fe66c6950fc4ce10ede7219424a32918d265569_aygi13.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424890/f3bd344b96bd1e21c1fcf9009a0699681602c1b0e7b291ca77c8caf163e565e1_tsqu02.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424890/d09050bb3e8ec6effcc32667938c7747aff73a4b8637e6cc597f41148be0c51a_fxhjez.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424891/d15fe13b6f1b2c2f9b37ba51cefac4189f63cd3345c99dc974b1776548324357_kpy9z3.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424891/c9781b1ae19fd2e0617614a01336a78ef3e5aa2214a7d77f33da8e5acdba715b_l83lmh.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424892/b308606e51ac79ae5e76db65824d66e795e3e25287daccb4a1d269369c0f0447_ue5o17.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424893/b1928b20dbecbb24aaa6c46c1fcff124cc468c0f2e6fe0171731cbee50da3f98_wgywaq.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424893/1414cffa73ae4b230fdb9f1d478a8fbf2e928f02ff4472c75b0de97cdfa2de6b_qwpeuh.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424894/9e8f6cb248e3c724eee89f982686653d0d3fb759f8060575d37fdedb95f0d433_fdxrds.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424894/5e8658cbe64bdbdb3be4ea5aa96434ef9d95ade628cc4bdcc2c0fb365797e114_gdd0gj.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424895/4d0c5ba63673caf6aaede3023cb6d5c1faf82acba075c7069a2e14519e880ec1_ovcvu0.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789424895/2a05ac948ab054ebc4bb7e707f0479c3349554d27287e0dcbc882a2f356201d4_lvobek.jpg"
             ],
-            "contact": {
-                "phone": "408-254-4693",
-                "address": "2003 Story Rd, San Jose, CA 95122",
-                "hours": "Lunes - Domingo: 9AM - 10PM"
-            },
-            "socials": [
-                { "platform": "instagram", "url": "https://www.instagram.com/la.mejortaqueria/" },
-                { "platform": "facebook", "url": "https://www.facebook.com/LaMejorTaqueriaCA/?_rdc=1&_rdr#" },
-                { "platform": "tiktok", "url": "https://www.tiktok.com/@la.mejortaqueria1?lang=en" }
+            "socials":[
+                {"platform":"instagram","url":"https://www.instagram.com/lariendamexicanfood/"},
+                {"platform":"facebook","url":"https://www.facebook.com/lariendamexicanfoodlongvalley"}
             ],
-            "paragraphs": {
-                "about": "Hace 8 años nació La Mejor Taquería, un lugar creado con pasión por la auténtica comida mexicana y el deseo de compartir sabores que conquistan desde el primer bocado.\n\nEntre sus favoritos destacan los deliciosos Tacos de Tripa y la tradicional Enchilada Michoacana, además de sus nuevos platillos, que llegan para sorprender a todos sus clientes.\n\nEn La Mejor Taquería, cada platillo tiene algo especial y todo su menú es popular entre quienes buscan disfrutar de un verdadero sabor mexicano.",
-                "promo": "",
-                "catering": "",
-                "delivery": ""
-            },
-            "titles": {
-                "about-title": "Somos La Mejor Taquería",
-                "about-subtitle": "Sobre Nosotros",
-                "gallery-title": "Deliciosa Comida Mexicana",
-                "gallery-subtitle": "Amor al Primer Bocado",
-                "info-title": "Información",
-                "info-subtitle": "Visítanos"
-            },
-            "info": {
-                "hours": "Lunes - Domingo: 9AM - 10PM",
-                "phone": "408-254-4693",
-                "address": "2003 Story Rd, San Jose, CA 95122"
+            "info":{
+                "hours":"Monday – Thursday: 11:00 AM – 9:00 PM\nFriday – Saturday: 11:00 AM – 10:00 PM\nSunday: 11:00 AM – 9:00 PM",
+                "phone":"908-867-7663",
+                "address":"5 W Mill Rd, Long Valley, NJ, 07853, United States"
             }
         };
     </script>
+
 </head>
 <body>
+    
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="navbar-brand" id="nav-brand">
-                <span>La Mejor</span> <span class="brand-accent">Taquería</span>
-            </a>
+            <a href="#" class="navbar-brand" id="nav-brand" data-es="La Rienda" data-en="La Rienda">La Rienda</a>
+            
             <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
             </button>
+            
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" data-es="Inicio" data-en="Home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery-section" class="nav-link" data-es="Galería" data-en="Gallery">Galería</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#info-section" class="nav-link" data-es="Visítanos" data-en="Visit Us">Visítanos</a>
-                </li>
-                <li class="lang-switch">
-                    <span id="lang-es" class="lang-btn active" role="button" tabindex="0" aria-label="Cambiar a Español">ES</span>
-                    <span id="lang-en" class="lang-btn" role="button" tabindex="0" aria-label="Switch to English">EN</span>
+                <li><a href="#" class="nav-link" data-es="Inicio" data-en="Home">Home</a></li>
+                <li><a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About">About</a></li>
+                <li><a href="#promo-section" class="nav-link" data-es="Promos" data-en="Promos">Promos</a></li>
+                <li><a href="#gallery-section" class="nav-link" data-es="Menú" data-en="Menu">Menu</a></li>
+                <li><a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a></li>
+                
+                <li class="lang-switcher">
+                    <span id="lang-es" class="lang-btn" onclick="applyLanguage('es')">ES</span>
+                    <span class="lang-divider">|</span>
+                    <span id="lang-en" class="lang-btn active" onclick="applyLanguage('en')">EN</span>
                 </li>
             </ul>
         </div>
@@ -1152,109 +631,118 @@
     <!-- Hero Section -->
     <header class="hero" id="hero-section">
         <div class="hero-overlay"></div>
-        <div class="taco-animation-layer" id="taco-layer">
-            <!-- Floating tacos will be injected here -->
-        </div>
-        <div class="hero-content">
+        <div class="hero-content fade-in">
             <div class="hero-logo-container">
-                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1791392093/LaMejorTaqueriaLOGO_feghsa.png" id="hero-logo" alt="Logo La Mejor Taquería" class="hero-logo" width="120" height="120">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1787412949/logo_vectorizado_nxuxqq.png" id="hero-logo" alt="La Rienda Logo" class="hero-logo">
             </div>
-            <h2 class="hero-subtitle">
-                <span class="line-decoration"></span>
-                <span data-es="Auténtica Comida Mexicana" data-en="Authentic Mexican Food">Auténtica Comida Mexicana</span>
-                <span class="line-decoration"></span>
-            </h2>
-        
+            
+            <h1 class="hero-title" data-es="Sabor Auténtico" data-en="Authentic Flavor">Authentic Flavor</h1>
+            <div class="vaquera-separator">
+                <div class="vaquera-diamond"></div>
+            </div>
+            
             <div class="hero-buttons">
-                <!-- Menutech Order Online Button -->
-                <a href="https://lamejortaqueria.onlineordering.io/en/menu" class="btn btn-primary" target="_blank" rel="noopener noreferrer" id="order-online-btn">
-                    <span data-es="Pedir Online" data-en="Order Online">Pedir Online</span>
-                </a>
-                <a href="#gallery-section" class="btn btn-outline">
-                    <span data-es="Ver Menú" data-en="View Menu">Ver Menú</span>
-                </a>
+                <!-- Script Motor Menutech -->
+                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+                <!-- Librería Menutech -->
+                <script src="https://menutech.xyz/menutechUI.min.js"></script>
+
+                <!-- Pedidos -->
+                <menutech-orders id="hero-orders" cuid="6c50d241-e03d-4997-b7bc-ef73154f281c" ruid="9d6b2548-bb54-4511-aee6-684c5201f4fd" background="#8b0000" color="#ffffff" data-glf-cuid="6c50d241-e03d-4997-b7bc-ef73154f281c" data-glf-ruid="9d6b2548-bb54-4511-aee6-684c5201f4fd">
+                </menutech-orders>
+
+                <!-- Reservaciones -->
+                <div id="hero-reservations-wrapper">
+                    <menutech-reservations id="hero-reservations" cuid="6c50d241-e03d-4997-b7bc-ef73154f281c" ruid="9d6b2548-bb54-4511-aee6-684c5201f4fd" background="#cc5500" color="#ffffff" data-glf-cuid="6c50d241-e03d-4997-b7bc-ef73154f281c" data-glf-ruid="9d6b2548-bb54-4511-aee6-684c5201f4fd" data-glf-reservation="true">
+                    </menutech-reservations>
+                </div>
+
+                <script>
+                    setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
+                </script>
             </div>
-            <p class="hero-address" id="hero-address">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                <span>2003 Story Rd, San Jose, CA 95122</span>
-            </p>
+            
+            <p class="hero-address" id="hero-address">5 W Mill Rd, Long Valley, NJ, 07853, United States</p>
         </div>
     </header>
 
-    <!-- About Us Section -->
-    <section class="about-section" id="about-section">
+    <!-- About Section -->
+    <section class="section-padding" id="about-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <h2 class="section-title" id="about-title">
-                        <span data-es="Somos" data-en="We Are">Somos</span> <span class="title-accent" data-es="La Mejor Taquería" data-en="La Mejor Taquería">La Mejor Taquería</span>
-                    </h2>
-                    <span class="section-subtitle-container">
-                        <span class="line-small"></span>
-                        <span class="section-subtitle" id="about-subtitle" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</span>
-                    </span>
-                    <p id="about-p1" data-es="Hace 8 años nació La Mejor Taquería, un lugar creado con pasión por la auténtica comida mexicana y el deseo de compartir sabores que conquistan desde el primer bocado." data-en="8 years ago, La Mejor Taquería was born, a place created with passion for authentic Mexican food and the desire to share flavors that conquer from the first bite.">
-                        Hace 8 años nació La Mejor Taquería, un lugar creado con pasión por la auténtica comida mexicana y el deseo de compartir sabores que conquistan desde el primer bocado.
-                    </p>
-                    <p id="about-p2" data-es="Entre sus favoritos destacan los deliciosos Tacos de Tripa y la tradicional Enchilada Michoacana, además de sus nuevos platillos, que llegan para sorprender a todos sus clientes." data-en="Among its favorites are the delicious Tacos de Tripa and the traditional Michoacán Enchilada, along with its new dishes, which arrive to surprise all its customers.">
-                        Entre sus favoritos destacan los deliciosos Tacos de Tripa y la tradicional Enchilada Michoacana, además de sus nuevos platillos, que llegan para sorprender a todos sus clientes.
-                    </p>
-                    <p id="about-p3" data-es="En La Mejor Taquería, cada platillo tiene algo especial y todo su menú es popular entre quienes buscan disfrutar de un verdadero sabor mexicano." data-en="At La Mejor Taquería, every dish has something special and its entire menu is popular among those seeking to enjoy a true Mexican flavor.">
-                        En La Mejor Taquería, cada platillo tiene algo especial y todo su menú es popular entre quienes buscan disfrutar de un verdadero sabor mexicano.
-                    </p>
+                <div class="about-text fade-in">
+                    <h4 class="section-subtitle" data-es="Nuestra Historia" data-en="Our Story">Our Story</h4>
+                    <h2 class="section-title" id="about-title" data-es="Bienvenidos a La Rienda" data-en="Welcome to La Rienda">Welcome to La Rienda</h2>
+                    <div class="vaquera-separator">
+                        <div class="vaquera-diamond"></div>
+                    </div>
+                    
+                    <p id="about-p1" data-es="Brindar una experiencia auténtica de cocina mexicana, ofreciendo platillos frescos, sabor tradicional y un ambiente cálido y familiar donde cada visita se convierta en un momento para disfrutar y compartir." data-en="To provide an authentic Mexican dining experience, offering fresh dishes, traditional flavor, and a warm, family-friendly atmosphere where every visit becomes a moment to enjoy and share.">To provide an authentic Mexican dining experience, offering fresh dishes, traditional flavor, and a warm, family-friendly atmosphere where every visit becomes a moment to enjoy and share.</p>
+                    
+                    <p id="about-p2" data-es="<strong>VISIÓN:</strong> Ser el restaurante mexicano favorito de nuestra comunidad, reconocido por nuestra calidad, hospitalidad y por crear experiencias que hagan que nuestros clientes siempre quieran volver." data-en="<strong>VISION:</strong> To be our community's favorite Mexican restaurant, recognized for our quality, hospitality, and for creating experiences that make our customers always want to return."><strong>VISION:</strong> To be our community's favorite Mexican restaurant, recognized for our quality, hospitality, and for creating experiences that make our customers always want to return.</p>
                 </div>
-                <div class="about-images">
-                    <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1791392210/IMG-20260924-WA0111_dk3jxf.jpg" alt="Platillo mexicano La Mejor Taquería" class="about-image" loading="lazy" width="400" height="320">
-                    <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1791392233/PIZZA_BIRRIA_a2jlp0.jpg" alt="Pizza Birria La Mejor Taquería" class="about-image" loading="lazy" width="400" height="320">
+                
+                <div class="vaquera-frame fade-in">
+                    <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1777151404/yiebnrm6l10wizbcdbp2.jpg" alt="La Rienda Cuisine" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Section -->
+    <section class="promo-section section-padding" id="promo-section">
+        <div class="container">
+            <h4 class="section-subtitle" data-es="Ofertas Especiales" data-en="Special Offers">Special Offers</h4>
+            <h2 class="section-title" id="promo-title" data-es="Nuestras Promociones" data-en="Our Promotions">Our Promotions</h2>
+            <div class="vaquera-separator">
+                <div class="vaquera-diamond"></div>
+            </div>
+            
+            <div class="promo-wrapper fade-in">
+                <div class="promo-img-container">
+                    <img src="./Promotion.jpg" alt="Monday Margarita Special Promotion" class="promo-img" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery-section" id="gallery-section">
+    <section class="gallery-section section-padding" id="gallery-section">
         <div class="container">
-            <h2 class="section-title centered" id="gallery-title" data-es="Deliciosa Comida Mexicana" data-en="Delicious Mexican Food">Deliciosa Comida Mexicana</h2>
-            <span class="section-subtitle-container centered">
-                <span class="line-small"></span>
-                <span class="section-subtitle" id="gallery-subtitle" data-es="Amor al Primer Bocado" data-en="Love At First Bite">Amor al Primer Bocado</span>
-            </span>
-            <div id="gallery-container">
-                <!-- Gallery images dynamically injected -->
+            <h4 class="section-subtitle" data-es="Especialidades del Rancho" data-en="Ranch Specialties">Ranch Specialties</h4>
+            <h2 class="section-title" id="gallery-title" data-es="Deliciosa Comida Mexicana" data-en="Delicious Mexican Food">Delicious Mexican Food</h2>
+            <div class="vaquera-separator">
+                <div class="vaquera-diamond"></div>
+            </div>
+            
+            <div id="gallery-container" class="fade-in">
+                <!-- Dynamically populated by JS with all images -->
             </div>
         </div>
     </section>
 
     <!-- Info Section -->
-    <section class="info-section" id="info-section">
+    <section class="section-padding" id="info-section">
         <div class="container">
-            <div class="info-box">
-                <h2 class="section-title centered" id="info-title" data-es="Información" data-en="Information">Información</h2>
-                <span class="section-subtitle-container centered">
-                    <span class="line-small"></span>
-                    <span class="section-subtitle" id="info-subtitle" data-es="Visítanos" data-en="Visit Us">Visítanos</span>
-                </span>
+            <div class="info-box fade-in">
+                <h4 class="section-subtitle" data-es="Visítanos" data-en="Visit Us">Visit Us</h4>
+                <h2 class="section-title" id="info-title" data-es="Información" data-en="Information">Information</h2>
+                <div class="vaquera-separator">
+                    <div class="vaquera-diamond"></div>
+                </div>
+                
                 <div class="info-grid">
                     <div class="info-item">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                        </div>
-                        <h4 data-es="Horarios" data-en="Opening Hours">Horarios</h4>
-                        <p id="info-hours">Lunes - Domingo: 9AM - 10PM</p>
+                        <h4 data-es="Horarios" data-en="Hours">Hours</h4>
+                        <p id="info-hours">Monday – Thursday: 11:00 AM – 9:00 PM<br>Friday – Saturday: 11:00 AM – 10:00 PM<br>Sunday: 11:00 AM – 9:00 PM</p>
                     </div>
                     <div class="info-item">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                        </div>
-                        <h4 data-es="Teléfono" data-en="Phone">Teléfono</h4>
-                        <p id="info-phone"><a href="tel:+14082544693">408-254-4693</a></p>
+                        <h4 data-es="Teléfono" data-en="Phone">Phone</h4>
+                        <p id="info-phone">908-867-7663</p>
                     </div>
                     <div class="info-item">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                        </div>
-                        <h4 data-es="Dirección" data-en="Address">Dirección</h4>
-                        <p id="info-address"><a href="https://maps.google.com/?q=2003+Story+Rd,+San+Jose,+CA+95122" target="_blank" rel="noopener noreferrer">2003 Story Rd, San Jose, CA 95122</a></p>
+                        <h4 data-es="Dirección" data-en="Address">Address</h4>
+                        <p id="info-address">5 W Mill Rd, Long Valley, NJ, 07853, United States</p>
                     </div>
                 </div>
             </div>
@@ -1264,39 +752,42 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid fade-in">
                 <div class="footer-col">
-                    <h4 class="footer-title" data-es="Contáctanos" data-en="Contact Us">Contáctanos</h4>
-                    <p id="footer-address">2003 Story Rd, San Jose, CA 95122</p>
-                    <p><span data-es="Teléfono" data-en="Phone">Teléfono</span>: <a href="tel:+14082544693" id="footer-phone">408-254-4693</a></p>
-                    <div class="social-icons" id="social-icons">
-                        <!-- Social icons dynamically injected -->
+                    <h4 class="footer-title" data-es="Encuéntranos" data-en="Find Us">Find Us</h4>
+                    <p id="footer-address">5 W Mill Rd, Long Valley, NJ, 07853, United States</p>
+                    <p id="footer-phone">Phone: 908-867-7663</p>
+                    
+                    <div id="social-icons" class="social-icons-wrapper">
+                        <!-- Dynamically added -->
                     </div>
                 </div>
+                
                 <div class="footer-col">
-                    <h4 class="footer-title" data-es="Horarios" data-en="Opening Hours">Horarios</h4>
-                    <p id="footer-hours">Lunes - Domingo: 9AM - 10PM</p>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title" data-es="Pedidos Online" data-en="Online Orders">Pedidos Online</h4>
-                    <p>
-                        <a href="https://lamejortaqueria.onlineordering.io/en/menu" target="_blank" rel="noopener noreferrer" data-es="Haz tu pedido aquí" data-en="Place your order here">Haz tu pedido aquí</a>
-                    </p>
+                    <h4 class="footer-title" data-es="Horarios de Atención" data-en="Opening Hours">Opening Hours</h4>
+                    <p id="footer-hours">Monday – Thursday: 11:00 AM – 9:00 PM<br>Friday – Saturday: 11:00 AM – 10:00 PM<br>Sunday: 11:00 AM – 9:00 PM</p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <span data-es="©" data-en="©">©</span> 2015-<span id="copyright-year"></span> Powered by <a href="https://menutech.xyz/" target="_blank" rel="noopener noreferrer">Menutech</a>. <span data-es="Todos los derechos reservados." data-en="All Rights Reserved.">Todos los derechos reservados.</span>
+                <span id="dynamic-footer-script"></span>
+                <script>
+                    (function(){
+                        const currentYear = new Date().getFullYear();
+                        document.getElementById('dynamic-footer-script').innerHTML = `&copy; 2015-${currentYear} Powered by <a href="https://menutech.xyz" target="_blank">Menutech</a>. All Rights Reserved.`;
+                    })();
+                </script>
             </div>
         </div>
     </footer>
 
     <script>
-        /* ===== UTILITY: CLOUDINARY OPTIMIZATION ===== */
         const optimizeCloudinaryUrl = (url, options = {}) => {
             if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
             const [baseUrl, hash] = url.split('#');
             if (!baseUrl.includes('/upload/')) return url;
             const parts = baseUrl.split('/upload/');
+
             let pathSegments = parts[1].split('/');
             if (pathSegments.length > 1) {
                 const firstSegment = pathSegments[0];
@@ -1305,70 +796,64 @@
                 if (isTransformation) pathSegments.shift();
             }
             const cleanPath = pathSegments.join('/');
+
             let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
-            transformations.push(`w_${options.width || 400}`);
+            if (options.width) transformations.push(`w_${options.width}`);
             if (options.height) transformations.push(`h_${options.height}`);
             if (options.crop) transformations.push(`c_${options.crop}`);
+            
             const optimizedUrl = `${parts[0]}/upload/${transformations.join(',')}/${cleanPath}`;
             return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
         };
 
-        /* ===== SOCIAL ICONS ===== */
         const SOCIAL_ICONS = {
-            instagram: `<svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
-            facebook: `<svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
-            tiktok: `<svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>`,
-            twitter: `<svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.48.75 2.78 1.89 3.55-.7 0-1.36-.21-1.94-.53v.05c0 2.05 1.45 3.78 3.39 4.17-.36.1-.74.15-1.13.15-.27 0-.54-.03-.8-.08.54 1.68 2.11 2.9 3.97 2.93-1.46 1.14-3.29 1.82-5.3 1.82-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23Z"/></svg>`
+            instagram: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            tiktok: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 448 512"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17h.12A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z"/></svg>`
         };
 
-        /* ===== BILINGUAL SYSTEM ===== */
-        let currentLang = 'es';
+        let currentLang = 'en';
 
         function applyLanguage(lang) {
             currentLang = lang;
             document.querySelectorAll('[data-es]').forEach(el => {
-                const text = el.getAttribute(`data-${lang}`);
-                if (text !== null) {
-                    el.textContent = text;
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = el.getAttribute(`data-${lang}`);
+                } else {
+                    el.innerHTML = el.getAttribute(`data-${lang}`);
                 }
             });
 
             const esBtn = document.getElementById('lang-es');
             const enBtn = document.getElementById('lang-en');
-            if (esBtn && enBtn) {
-                esBtn.classList.toggle('active', lang === 'es');
-                enBtn.classList.toggle('active', lang === 'en');
+            if(esBtn && enBtn) {
+                esBtn.className = lang === 'es' ? 'lang-btn active' : 'lang-btn';
+                enBtn.className = lang === 'en' ? 'lang-btn active' : 'lang-btn';
             }
-
-            document.documentElement.lang = lang;
         }
 
-        /* ===== UI UPDATE FROM MENUTECH STATE ===== */
         function updateUI(data) {
             if (!data) return;
 
             if (data.lang) applyLanguage(data.lang);
 
-            if (data.title) {
-                const navBrand = document.getElementById('nav-brand');
-                if (navBrand) navBrand.innerHTML = `<span>La Mejor</span> <span class="brand-accent">Taquería</span>`;
-            }
-
             if (data.logoImg) {
                 const logo = document.getElementById('hero-logo');
                 const favicon = document.getElementById('favicon');
-                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 250 });
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 300 });
                 if (logo) logo.src = optimizedLogo;
                 if (favicon) favicon.href = optimizedLogo;
             }
 
             if (data.heroAddress !== undefined) {
-                const addr = document.querySelector('#hero-address span:last-child');
+                const addr = document.getElementById('hero-address');
                 if (addr) addr.textContent = data.heroAddress;
             }
 
+            // Sections Visibility
             const sections = {
                 'about-section': data.showAbout !== false,
+                'promo-section': data.showPromo !== false,
                 'gallery-section': data.showGallery !== false,
                 'info-section': data.showInfo !== false
             };
@@ -1377,255 +862,153 @@
                 if (el) el.style.display = sections[id] ? '' : 'none';
             });
 
+            // Menutech Orders/Reservations Buttons
+            const cuid = data.cuid || '';
+            const ruid = data.ruid || '';
+
+            const ordersBtn = document.querySelector('menutech-orders');
+            if (ordersBtn) {
+                const newOrdersBtn = document.createElement('menutech-orders');
+                newOrdersBtn.setAttribute('cuid', cuid);
+                newOrdersBtn.setAttribute('ruid', ruid);
+                newOrdersBtn.setAttribute('background', '#8b0000');
+                newOrdersBtn.setAttribute('color', '#ffffff');
+                newOrdersBtn.setAttribute('data-glf-cuid', cuid);
+                newOrdersBtn.setAttribute('data-glf-ruid', ruid);
+                ordersBtn.parentNode.replaceChild(newOrdersBtn, ordersBtn);
+            }
+
+            const resWrapper = document.getElementById('hero-reservations-wrapper');
+            if (resWrapper) {
+                resWrapper.style.display = (data.showReservations !== false) ? 'inline-block' : 'none';
+                const resBtn = resWrapper.querySelector('menutech-reservations');
+                if (resBtn) {
+                    const newResBtn = document.createElement('menutech-reservations');
+                    newResBtn.setAttribute('cuid', cuid);
+                    newResBtn.setAttribute('ruid', ruid);
+                    newResBtn.setAttribute('background', '#cc5500');
+                    newResBtn.setAttribute('color', '#ffffff');
+                    newResBtn.setAttribute('data-glf-cuid', cuid);
+                    newResBtn.setAttribute('data-glf-ruid', ruid);
+                    newResBtn.setAttribute('data-glf-reservation', 'true');
+                    resBtn.parentNode.replaceChild(newResBtn, resBtn);
+                }
+            }
+
+            if (window.glfBindButtons) window.glfBindButtons();
+
+            // Images
             if (data.heroImg) {
                 const heroSection = document.getElementById('hero-section');
                 if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1600 })}')`;
             }
-
             if (data.aboutImg1) {
                 const img = document.getElementById('about-img-1');
-                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 600 });
-            }
-            if (data.aboutImg2) {
-                const img = document.getElementById('about-img-2');
-                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 600 });
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 800 });
             }
 
+            // Info Section
             if (data.info) {
+                const hoursHTML = (data.info.hours || '').replace(/\n/g, '<br>');
                 const hoursEl = document.getElementById('info-hours');
                 const phoneEl = document.getElementById('info-phone');
                 const addressEl = document.getElementById('info-address');
 
-                if (hoursEl) hoursEl.textContent = data.info.hours || '';
-                if (phoneEl) phoneEl.innerHTML = data.info.phone ? `<a href="tel:+1${data.info.phone.replace(/\D/g, '')}">${data.info.phone}</a>` : '';
-                if (addressEl) addressEl.innerHTML = data.info.address ? `<a href="https://maps.google.com/?q=${encodeURIComponent(data.info.address)}" target="_blank" rel="noopener noreferrer">${data.info.address}</a>` : '';
+                if (hoursEl) hoursEl.innerHTML = hoursHTML;
+                if (phoneEl) phoneEl.textContent = data.info.phone || '';
+                if (addressEl) addressEl.textContent = data.info.address || '';
 
                 const fHours = document.getElementById('footer-hours');
                 const fPhone = document.getElementById('footer-phone');
                 const fAddress = document.getElementById('footer-address');
-                if (fHours) fHours.textContent = data.info.hours || '';
-                if (fPhone) {
-                    fPhone.textContent = data.info.phone || '';
-                    fPhone.href = `tel:+1${(data.info.phone || '').replace(/\D/g, '')}`;
-                }
+                if (fHours) fHours.innerHTML = hoursHTML;
+                if (fPhone) fPhone.textContent = data.info.phone ? `Phone: ${data.info.phone}` : '';
                 if (fAddress) fAddress.textContent = data.info.address || '';
             }
 
+            // Social Networks
             if (data.socials) {
                 const container = document.getElementById('social-icons');
                 if (container) {
                     container.innerHTML = data.socials.map(s => {
-                        const platform = s.platform.toLowerCase();
-                        const icon = SOCIAL_ICONS[platform] || SOCIAL_ICONS.twitter;
-                        return `<a href="${s.url}" target="_blank" rel="noopener noreferrer" aria-label="${s.platform}">${icon}</a>`;
+                        let platform = s.platform.toLowerCase();
+                        if (platform === 'twitter' || platform === 'x' || s.url.includes('tiktok.com')) {
+                            if (s.url.includes('tiktok.com')) platform = 'tiktok';
+                        }
+                        return `
+                            <a href="${s.url}" target="_blank" class="social-link" aria-label="${platform}">
+                                ${SOCIAL_ICONS[platform] || SOCIAL_ICONS['instagram']}
+                            </a>
+                        `;
                     }).join('');
                 }
             }
 
+            // Gallery
             if (data.gallery) {
                 const container = document.getElementById('gallery-container');
                 if (container) {
-                    container.innerHTML = data.gallery.map((img, i) => `
-                        <img src="${optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' })}" 
-                             class="gallery-img" 
-                             loading="lazy" 
-                             width="400" 
-                             height="400"
-                             alt="Platillo mexicano La Mejor Taquería ${i + 1}">
+                    container.innerHTML = data.gallery.map(img => `
+                        <div class="gallery-item">
+                            <img src="${optimizeCloudinaryUrl(img, { width: 600, height: 600, crop: 'fill' })}" class="gallery-img" loading="lazy" alt="Delicious Mexican Dish">
+                        </div>
                     `).join('');
                 }
             }
-
-            if (data.titles) {
-                const aboutTitle = document.getElementById('about-title');
-                if (aboutTitle && data.titles['about-title']) {
-                    aboutTitle.innerHTML = `<span data-es="Somos" data-en="We Are">${currentLang === 'es' ? 'Somos' : 'We Are'}</span> <span class="title-accent">${data.titles['about-title'].replace(/^We are |^Somos /, '')}</span>`;
-                }
-                const aboutSub = document.getElementById('about-subtitle');
-                if (aboutSub && data.titles['about-subtitle']) {
-                    aboutSub.textContent = data.titles['about-subtitle'];
-                    aboutSub.setAttribute('data-es', 'Sobre Nosotros');
-                    aboutSub.setAttribute('data-en', 'About Us');
-                }
-                const galleryTitle = document.getElementById('gallery-title');
-                if (galleryTitle && data.titles['gallery-title']) {
-                    galleryTitle.textContent = data.titles['gallery-title'];
-                    galleryTitle.setAttribute('data-es', 'Deliciosa Comida Mexicana');
-                    galleryTitle.setAttribute('data-en', 'Delicious Mexican Food');
-                }
-                const gallerySub = document.getElementById('gallery-subtitle');
-                if (gallerySub && data.titles['gallery-subtitle']) {
-                    gallerySub.textContent = data.titles['gallery-subtitle'];
-                    gallerySub.setAttribute('data-es', 'Amor al Primer Bocado');
-                    gallerySub.setAttribute('data-en', 'Love At First Bite');
-                }
-                const infoTitle = document.getElementById('info-title');
-                if (infoTitle && data.titles['info-title']) {
-                    infoTitle.textContent = data.titles['info-title'];
-                    infoTitle.setAttribute('data-es', 'Información');
-                    infoTitle.setAttribute('data-en', 'Information');
-                }
-                const infoSub = document.getElementById('info-subtitle');
-                if (infoSub && data.titles['info-subtitle']) {
-                    infoSub.textContent = data.titles['info-subtitle'];
-                    infoSub.setAttribute('data-es', 'Visítanos');
-                    infoSub.setAttribute('data-en', 'Visit Us');
-                }
-            }
-
-            if (data.paragraphs && data.paragraphs.about) {
-                const segments = data.paragraphs.about.split('\n\n');
-                ['about-p1', 'about-p2', 'about-p3'].forEach((id, index) => {
-                    const el = document.getElementById(id);
-                    if (el) {
-                        const segment = segments[index] || '';
-                        el.textContent = segment;
-                        el.style.display = segment.trim() === '' ? 'none' : '';
-                    }
-                });
-            }
-
+            
+            // Reapply language tags in case data structure resets elements
             applyLanguage(currentLang);
         }
 
-        /* ===== INITIALIZATION ===== */
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearEl = document.getElementById('copyright-year');
-            if (yearEl) yearEl.textContent = new Date().getFullYear();
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'UPDATE_CONTENT') updateUI(event.data.data);
+        });
 
+        document.addEventListener('DOMContentLoaded', () => {
             if (window.MENU_TECH_STATE) {
                 updateUI(window.MENU_TECH_STATE);
+            } else {
+                applyLanguage('en');
             }
 
-            const esBtn = document.getElementById('lang-es');
-            const enBtn = document.getElementById('lang-en');
-            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
-            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
-            if (esBtn) esBtn.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') applyLanguage('es'); });
-            if (enBtn) enBtn.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') applyLanguage('en'); });
-
-            /* ===== NAVBAR TOGGLE ===== */
-            const navbarToggler = document.getElementById('navbar-toggler');
-            const navMenu = document.getElementById('nav-menu');
-
-            if (navbarToggler) {
-                navbarToggler.addEventListener('click', () => {
-                    navMenu.classList.toggle('active');
-                    const icons = navbarToggler.querySelectorAll('.toggler-icon');
-                    icons.forEach((icon, index) => {
-                        if (navMenu.classList.contains('active')) {
-                            if (index === 0) icon.style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            else if (index === 1) icon.style.opacity = '0';
-                            else if (index === 2) icon.style.transform = 'rotate(-45deg) translate(5px, -5px)';
-                        } else {
-                            icon.style.transform = 'none';
-                            icon.style.opacity = '1';
-                        }
-                    });
-                });
-            }
-
-            document.addEventListener('click', (e) => {
-                if (navbarToggler && navMenu && !navbarToggler.contains(e.target) && !navMenu.contains(e.target)) {
-                    navMenu.classList.remove('active');
-                    const icons = navbarToggler.querySelectorAll('.toggler-icon');
-                    icons.forEach(icon => {
-                        icon.style.transform = 'none';
-                        icon.style.opacity = '1';
-                    });
-                }
-            });
-
-            /* ===== NAVBAR SCROLL EFFECT ===== */
-            const navbar = document.querySelector('.navbar');
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
-                if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 80);
+                if (window.scrollY > 50) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
             });
 
-            /* ===== SMOOTH SCROLL ===== */
+            // Mobile Menu
+            const toggler = document.getElementById('navbar-toggler');
+            const menu = document.getElementById('nav-menu');
+            toggler.addEventListener('click', () => menu.classList.toggle('active'));
+
+            // Smooth Scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
+                    menu.classList.remove('active');
                     const target = document.querySelector(this.getAttribute('href'));
                     if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
                     }
                 });
             });
 
-            /* ===== INTERSECTION OBSERVER FOR FADE-IN ===== */
-            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            // Intersection Observer for fade-in animations
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.15 });
 
-            document.querySelectorAll('section').forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(40px)';
-                section.style.transition = 'opacity 0.7s ease-out, transform 0.7s ease-out';
-                observer.observe(section);
-            });
-
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.opacity = '1';
-                hero.style.transform = 'translateY(0)';
-            }
-
-            /* ===== FLOATING TACO ANIMATION ===== */
-            const tacoLayer = document.getElementById('taco-layer');
-            const tacoImgUrl = 'https://raw.githubusercontent.com/yesimenutech/taco/main/taco.webp';
-
-            if (tacoLayer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                const tacoCount = 8;
-                for (let i = 0; i < tacoCount; i++) {
-                    const taco = document.createElement('div');
-                    taco.className = 'floating-taco';
-                    const size = 30 + Math.random() * 50;
-                    taco.style.width = size + 'px';
-                    taco.style.height = size + 'px';
-                    taco.style.left = (Math.random() * 90 + 5) + '%';
-                    taco.style.animationDelay = (Math.random() * 12) + 's';
-                    taco.style.animationDuration = (10 + Math.random() * 8) + 's';
-                    taco.innerHTML = `<img src="${tacoImgUrl}" alt="" loading="lazy" width="${size}" height="${size}">`;
-                    tacoLayer.appendChild(taco);
-                }
-            }
-
-            /* ===== CLICK-TO-LOCATE FOR MENUTECH EDITOR ===== */
-            document.body.addEventListener('click', (e) => {
-                let target = e.target;
-                while (target && target !== document.body) {
-                    if (target.id && (
-                        target.id === 'nav-brand' ||
-                        target.id === 'hero-logo' ||
-                        target.id === 'hero-section' ||
-                        target.id === 'hero-address' ||
-                        target.id.startsWith('about-') ||
-                        target.id === 'gallery-container' ||
-                        target.id === 'info-section' ||
-                        target.id.startsWith('info-') ||
-                        target.id.startsWith('footer-') ||
-                        target.id === 'social-icons'
-                    )) {
-                        window.parent.postMessage({ type: 'SCROLL_TO', id: target.id }, '*');
-                        break;
-                    }
-                    target = target.parentElement;
-                }
-            });
-        });
-
-        /* ===== LISTEN FOR EDITOR UPDATES ===== */
-        window.addEventListener('message', (event) => {
-            if (event.data && event.data.type === 'UPDATE_CONTENT') {
-                updateUI(event.data.data);
-            }
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });
     </script>
 </body>
